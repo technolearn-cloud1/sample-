@@ -7,13 +7,13 @@ var bodyParser = require('body-parser')
 // Set region for AWS SDKs
 AWS.config.region = process.env.REGION
 
-var app = express()
+//var app = express()
 
 app.set('view engine', 'pug')
 app.set('views', __dirname + '/views')
 app.use(bodyParser.urlencoded({extended:false}))
 
-app.get('/', function (req, res) {
+//app.get('/', function (req, res) {
   res.render('index', {
 
     title: 'Abc'
@@ -21,9 +21,9 @@ app.get('/', function (req, res) {
     })
     res.status(200).end();
 })
-qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm
-var port = process.env.PORT || 3000
 
-var server = app.listen(port, function () {
+//var port = process.env.PORT || 3000
+
+//var server = app.listen(port, function () {
   console.log('Server running at http://127.0.0.1:' + port + '/')
 })
