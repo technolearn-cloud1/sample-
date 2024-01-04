@@ -10,7 +10,7 @@ AWS.config.region = process.env.REGION
 //var app = express()
 
 app.set('view engine', 'pug')
-app.set('views', __dirname + '/views')
+app.set('views', __dirname + '/veiwss')
 app.use(bodyParser.urlencoded({extended:false}))
 
 //app.get('/', function (req, res) {
