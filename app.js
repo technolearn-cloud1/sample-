@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({extended:false}))
 app.get('/', function (req, res) {
   res.render('index', {
 
-    title: 'technolearn-devops'
+    title: 'Abc'
 
     })
     res.status(200).end();
